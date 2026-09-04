@@ -1,0 +1,106 @@
+// Normalize outputs to target values? Choose on or off
+Normalize = on
+// Tolerance for convergence of objective function (default 0.0001)
+tol = 0.0001
+// Maximum number of iterations in Levenberg-Marquardt (default 20)
+Niter = 30
+
+// *** Target variables: if wt is not defined, 0 is assumed, i.e. not included ***
+// Volumes (ml)
+// EDV/ESV = end-diastolic/systolic volume
+LVEDV = 151
+wt_LVEDV = 10
+LVESV
+LAEDV = 80
+wt_LAEDV = 1
+LAESV = 40
+wt_LAESV = 1
+RVEDV = 181
+wt_RVEDV = 10
+RVESV
+RAEDV = 52
+wt_RAEDV = 1
+RAESV = 19
+wt_RAESV = 1
+SV = 106
+wt_SV = 100
+
+// Lengths (cm)
+// LA/SA = long/short axis; WT = wall thickness at pi/2
+LVLAEDL
+LVLAESL
+LVSAEDD
+LVSAESD
+LVEDWT
+LVESWT
+
+// Maximum flows (ml/s)
+// PV = pulmonary vein, LV/RVOTFLOW = outflows
+PVMAXFLOW
+LVOTFLOW
+RVOTFLOW
+
+// Velocities (cm/s)
+// E/TE = mitral/tricuspid valve
+// EPRIME = d/dt (base-apex length)
+EWAVEMAXVEL = 80
+wt_EWAVEMAXVEL = 1
+TEWAVEMAXVEL
+EPRIME
+VELAORTAWAVE = 400
+wt_VELAORTAWAVE = 1
+
+// Ratios (non-dimensional)
+// ETOA as E/(E + A) A max 2nd half of diastole, during atrial contraction
+// TETOA tricuspid
+ETOA = 1.4
+wt_ETOA = 1
+TETOA = 1.32
+wt_TETOA = 1
+ETOEPRIME
+LATOSA
+
+// Pressures (mmHg)
+// SYST/DIAST = Pas max/min, PV = Ppv 
+SYSTBP = 120
+wt_SYSTBP = 10
+DIASTBP = 73.8
+wt_DIASTBP = 10
+PVMEAN = 9
+wt_PVMEAN = 1
+PLVMAX = 130
+wt_PLVMAX = 1
+PLVED = 9
+wt_PLVED = 1
+PRVMAX = 25
+wt_PRVMAX = 1
+PRVED = 4
+wt_PRVED = 1
+PPAMEAN = 15
+wt_PPAMEAN = 1
+PPAED = 9
+wt_PPAED = 1
+PRAMEAN = 3
+wt_PRAMEAN = 1
+PAOMEAN
+PLAMEAN = 8
+wt_PLAMEAN = 1
+PAOMAX = 110
+//wt_PAOMAX = 1
+
+// Times (s)
+// start to end of outflow waveform
+LVOTSTART_END
+RVOTSTART_END
+
+// Strains (non-dimensional)
+// GLS/GCS = average longitudinal/circumferential strains
+// Other chambers - radial strain 
+LVGLS
+LVGCS
+LASTRAIN
+RASTRAIN
+
+// Stroke work
+LV_SW
+RV_SW
